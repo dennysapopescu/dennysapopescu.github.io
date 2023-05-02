@@ -1,0 +1,180 @@
+<html>
+<head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6EKZLT2PT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6EKZLT2PT5');
+</script>
+    
+    
+    
+    
+<title>Sedinta foto de eveniment</title>
+<style>
+
+h1{color: #5c5cfa;
+	font-weight: bold;}
+
+
+ .cont {
+ margin: 0px;
+ padding: 15px;
+  }	
+
+ul  {
+  list-style: circle;
+}
+
+li{color: #fae3ff;
+ font-size: 20px;
+}
+
+p{color: #5c5cfa;
+font-size: 20px;
+font-family: Times New Roman;
+    text-align: justify;}
+
+h2{font-size: 30px;
+	font-family:Times New Roman;
+	color: #5c5cfa;}
+
+body{margin: 0px;
+    background-color: #ffe9ad;
+	}
+    
+      .myButton {
+      box-shadow: inset 0px 0px 0px 0px #e184f3;
+      background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+      background-color: #6f55a3;
+      border-radius: 20px;
+      border: 1px solid #a511c0;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Times New Roman;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px 26px;
+      text-decoration: none;
+      text-shadow: 0px 0px 0px #9b14b3;
+    }
+
+    .myButton:hover {
+      background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+      background-color: #a20dbd;
+    }
+
+    .myButton:active {
+      position: relative;
+      top: 1px;
+    }
+ 
+</style>
+</head>
+
+<body>
+
+
+
+<div class="cont">
+    <p><b>
+        Dacă doriți să imortalizați momentele speciale din viața dumneavoastră, o ședință foto de eveniment este exact ceea ce vă trebuie! Fie că este vorba despre o nuntă, botez, aniversare sau orice alt tip de eveniment important, ședința foto vă va ajuta să păstrați amintiri de neuitat pentru întreaga viață. Cu o echipă de fotografi profesioniști, veți avea parte de imagini de calitate superioară, realizate cu aparatură de ultimă generație și cu o atenție deosebită la detalii. Indiferent de locația aleasă pentru ședința foto, veți fi surprinși de creativitatea și originalitatea fotografiilor obținute, care vor capta esența momentelor fericite din viața dumneavoastră. Așadar, nu ezitați să alegeți o ședință foto de eveniment și bucurați-vă de amintiri de neuitat, imortalizate într-un mod unic și special.
+        <br/>Pentru fotografia de eveniment prețurile încep de la 300 RON și variază în funcție de tipul evenimentului.
+ 
+</b> </p>
+ 
+  <div style="text-align: center; padding-bottom: 50px">
+    <a href="rezervari.html" class="myButton">Fă-ți o rezervare acum!</a>
+  </div>
+  
+
+  
+	
+	<h2 id="fly">⭐ Mai jos am pregătit o mică galerie cu câteva exemple de fotografii. Poziționează mouse-ul deasupra lor pentru a le vedea mărite și pentru a vedea categoria din care fac parte!  </h2>
+
+<script type="text/javascript">
+
+
+message = document.getElementById("fly").innerHTML; // $ = taking a new line
+distance = 50; // pixel(s)
+speed = 50; // milliseconds
+
+var txt="",
+	num=0,
+	num4=0,
+	flyofle="",
+	flyofwi="",
+	flyofto="",
+	fly=document.getElementById("fly");
+
+
+function stfly() {
+	for(i=0;i != message.length;i++) {
+		if(message.charAt(i) != "$")
+			txt += "<span style='position:relative;visibility:hidden;' id='n"+i+"'>"+message.charAt(i)+"<\/span>";
+		else
+			txt += "<br>";
+	}
+	fly.innerHTML = txt;
+	txt = "";
+	flyofle = fly.offsetLeft;
+	flyofwi = fly.offsetWidth;
+	flyofto = fly.offsetTop;
+	fly2b();
+}
+
+function fly2b() {
+	if(num4 != message.length) {
+		if(message.charAt(num4) != "$") {
+			var then = document.getElementById("n" + num4);
+			then.style.left = flyofle - then.offsetLeft + flyofwi / 2 + 'px';
+			then.style.top = flyofto - then.offsetTop + distance + 'px';
+			fly3(then.id, parseInt(then.style.left), parseInt(then.style.left) / 5, parseInt(then.style.top), parseInt(then.style.top) / 5);
+		}
+		num4++;
+		setTimeout("fly2b()", speed);
+	}
+}
+
+function fly3(target,lef2,num2,top2,num3) {
+	if((Math.floor(top2) != 0 && Math.floor(top2) != -1) || (Math.floor(lef2) != 0 && Math.floor(lef2) != -1)) {
+		if(lef2 >= 0)
+			lef2 -= num2;
+		else
+			lef2 += num2 * -1;
+		if(Math.floor(lef2) != -1) {
+			document.getElementById(target).style.visibility = "visible";
+			document.getElementById(target).style.left = Math.floor(lef2) + 'px';
+		} else {
+			document.getElementById(target).style.visibility = "visible";
+			document.getElementById(target).style.left = Math.floor(lef2 + 1) + 'px';
+		}
+		if(lef2 >= 0)
+			top2 -= num3
+		else
+			top2 += num3 * -1;
+		if(Math.floor(top2) != -1)
+			document.getElementById(target).style.top = Math.floor(top2) + 'px';
+		else
+			document.getElementById(target).style.top = Math.floor(top2 + 1) + 'px';
+		setTimeout("fly3('"+target+"',"+lef2+","+num2+","+top2+","+num3+")",50)
+	}
+}
+
+stfly()
+
+</script>
+<br>
+ <iframe src="galerie.html" width="100%" height="95%"></iframe>
+	
+	
+</div>	
+
+
+</body>
+</html>

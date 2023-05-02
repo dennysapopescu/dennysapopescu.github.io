@@ -1,0 +1,201 @@
+<html>
+<head>
+    
+    
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6EKZLT2PT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6EKZLT2PT5');
+</script>
+    
+    
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style_programari.css">
+<title>Rezervari</title>
+<style>
+    
+body{
+        background-color: #ffe9ad;
+}
+
+    
+.form-submit-button {
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold 15px sans-serif;
+text-shadow: none;
+}
+
+    h2{
+        font-family: Times New Roman bold;
+        color: #6f55a3;
+    }
+
+.myButton {
+        box-shadow: inset 0px 0px 0px 0px #e184f3;
+        background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+        background-color: #c123de;
+        border-radius: 20px;
+        border: 1px solid #a511c0;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Times New Roman;
+        font-size: 19px;
+        font-weight: bold;
+        padding: 5px 26px;
+        text-decoration: none;
+        text-shadow: 0px 0px 0px #9b14b3;
+      }
+      .myButton:hover {
+        background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+        background-color: #a20dbd;
+      }
+      .myButton:active {
+        position: relative;
+        top: 1px;
+      }
+    
+    
+    div#name {order: 2;}
+div#email {order: 4;}
+div#date {order: 3;}
+div#time {order: 1;}
+    
+    
+</style>
+    
+    
+<script language="JavaScript1.1" type="text/javascript">
+
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+  {
+    return (true)
+  }
+    alert("Ați introdus o adresă invalidă de email!")
+    return (false)
+}
+</script>
+
+
+
+</head>
+<body>
+ <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <br/><h2>REZERVA SEDINTA FOTO DORITA!</h2>
+                        </div>
+                        <form required>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Nume</label>
+                                        <br/>
+                                        <input id="name" name="name" type="text" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Nume" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Prenume</label>
+                                        <br/>
+                                        <input id="name" name="name" type="text" onkeydown="return /[a-z]/i.test(event.key)" placeholder="Prenume" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input id="email" name="email" type="email" placeholder="E-Mail" class="form-control input-md" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Ora programării</label>
+                                        <select id="time" name="time" class="form-control" required>
+											<option value="">Selectați ora</option>
+                                            <option value="8:00">8:00</option>
+                                            <option value="9:00">9:00</option>
+                                            <option value="10:00">10:00</option>
+											<option value="11:00">11:00</option>
+                                            <option value="12:00">12:00</option>
+                                            <option value="13:00">13:00</option>
+											<option value="14:00">14:00</option>
+                                            <option value="15:00">15:00</option>
+                                            <option value="16:00">16:00</option>
+											<option value="17:00">17:00</option>
+                                            <option value="18:00">18:00</option>
+                                            <option value="19:00">19:00</option>
+                                            <option value="20:00">20:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Numar de telefon</label>
+                                        <input id="tel" name="tel" type="text" placeholder="Numar de telefon" class="form-control input-md" onkeydown="return /[0-9]/i.test(event.key)" required>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Data programării</label>
+										<br/>
+                                       <input type="date" id="date" name="date" required>
+
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Serviciul dorit</label>
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control" required>
+											<option value="">Selectați tipul de sedinta foto dorit</option>
+                                            <option value="Service#1">Sedinta foto personala</option>
+                                            <option value="Service#2">Sedinta foto de eveniment</option>
+                                            <option value="Service#3">Sedinta foto in studio</option>
+                                        </select>
+                                    </div>
+                                </div>
+								
+                                <div class="col-md-12">
+								<br/>
+                                    <div class="form-group">
+                                        <button id="singlebutton" name="singlebutton" type="submit"  onclick="ValidateEmail()">Rezervă!</button>
+                                    </div>
+                                    <div style="text-align: center; padding-bottom: 50px">
+                        <a href="homepage.html" class="myButton">Înapoi la pagina principală!</a>
+    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    
+</body>
+</html>

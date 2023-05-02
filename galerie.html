@@ -1,0 +1,96 @@
+<html>
+<head>
+    
+
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6EKZLT2PT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6EKZLT2PT5');
+</script>
+    
+    
+    
+<style>
+body{ background-color: #8fc3ff;}
+.gallerycontainer{
+position: relative;
+
+}
+
+.thumbnail img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+
+.thumbnail:hover{
+background-color: transparent;
+}
+
+.thumbnail:hover img{
+border: 1px solid blue;
+}
+
+.thumbnail span{ 
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img{ 
+border-width: 0;
+padding: 2px;
+width: 900px;
+height: 600px;
+}
+
+.thumbnail:hover span{ 
+visibility: visible;
+top: 0;
+left: 300px; 
+z-index: 50;
+}
+
+</style>
+</head>
+<body>
+
+   <div class="gallerycontainer">
+
+<a class="thumbnail" href="#thumb"><img src="Poze/g1.jpg" width="100px" height="70px" border="2" />
+<span><img src="Poze/g1.jpg" /></span></a>
+
+
+<a class="thumbnail" href="#thumb"><img src="Poze/g2.png" width="100px" height="70px" border="2" />
+<span><img src="Poze/g2.png" /></span></a>
+<br/>
+
+
+<a class="thumbnail" href="#thumb"><img src="Poze/g3.jpg" width="100px" height="70px" border="2" />
+<span><img src="Poze/g3.jpg" /></span></a> 
+
+
+<a class="thumbnail" href="#thumb"><img src="Poze/g4.jpg" width="100px" height="70px" border="2" />
+<span><img src="Poze/g4.jpg" /></span></a>
+<br/>
+
+<a class="thumbnail" href="#thumb"><img src="Poze/g5.png" width="100px" height="70px" border="2" />
+<span><img src="Poze/g5.png" /></span></a>
+
+
+<a class="thumbnail" href="#thumb"><img src="Poze/g6.jpg" width="100px" height="70px" border="2" />
+<span><img src="Poze/g6.jpg" /></span></a>
+
+</div>
+
+</body>
+</html>

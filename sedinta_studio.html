@@ -1,0 +1,370 @@
+<html>
+<head>
+    <title> Sedinta foto de studio</title>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6EKZLT2PT5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6EKZLT2PT5');
+</script>
+    
+    
+    
+    
+    <style>
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: 1rem;
+  line-height: 1.25;
+  background-color: #ffe9ad;
+}
+
+.grid {
+  width: 100%;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-block {
+  width: 50%;
+  min-height: 11.25rem;
+  padding: 1rem;
+}
+
+.image-grid {
+  -webkit-transform: rotateX(45deg) rotateZ(45deg);
+  transform: rotateX(45deg) rotateZ(45deg);
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+.image-grid .tile-link:hover .tile-img {
+  top: -1rem;
+  left: -1rem;
+}
+
+.image-grid .tile-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition-property: opacity, top, left, box-shadow;
+  transition-property: opacity, top, left, box-shadow;
+}
+
+.tile-link {
+  display: block;
+}
+
+.tile-link:hover .tile-img {
+  opacity: 1;
+}
+
+.tile-link:hover .tile-img-link {
+  display: block;
+}
+
+.tile-link:hover .tile-img-link:hover .tile-img {
+  opacity: 0.5;
+}
+
+.tile-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.125s;
+  transition-duration: 0.125s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.tile-link:hover .tile-img1 {
+  box-shadow: 5px 5px rgba(244, 170, 200, 0.4),
+    10px 10px rgba(244, 170, 200, 0.3), 15px 15px rgba(244, 170, 200, 0.2),
+    20px 20px rgba(244, 170, 200, 0.1), 25px 25px rgba(244, 170, 200, 0.05);
+}
+
+.tile-link:hover .tile-img2 {
+  box-shadow: 5px 5px rgba(45, 186, 233, 0.4), 10px 10px rgba(45, 186, 233, 0.3),
+    15px 15px rgba(45, 186, 233, 0.2), 20px 20px rgba(45, 186, 233, 0.1),
+    25px 25px rgba(45, 186, 233, 0.05);
+}
+
+.tile-link:hover .tile-img3 {
+  box-shadow: 5px 5px rgba(214, 221, 244, 0.4),
+    10px 10px rgba(214, 221, 244, 0.3), 15px 15px rgba(214, 221, 244, 0.2),
+    20px 20px rgba(214, 221, 244, 0.1), 25px 25px rgba(214, 221, 244, 0.05);
+}
+
+.tile-link:hover .tile-img4 {
+  box-shadow: 5px 5px rgba(82, 119, 192, 0.4), 10px 10px rgba(82, 119, 192, 0.3),
+    15px 15px rgba(82, 119, 192, 0.2), 20px 20px rgba(82, 119, 192, 0.1),
+    25px 25px rgba(82, 119, 192, 0.05);
+}
+
+.tile-link:hover .tile-img5 {
+  box-shadow: 5px 5px rgba(138, 218, 245, 0.4),
+    10px 10px rgba(138, 218, 245, 0.3), 15px 15px rgba(138, 218, 245, 0.2),
+    20px 20px rgba(138, 218, 245, 0.1), 25px 25px rgba(138, 218, 245, 0.05);
+}
+
+.tile-link:hover .tile-img6 {
+  box-shadow: 5px 5px rgba(203, 215, 193, 0.4),
+    10px 10px rgba(203, 215, 193, 0.3), 15px 15px rgba(203, 215, 193, 0.2),
+    20px 20px rgba(203, 215, 193, 0.1), 25px 25px rgba(203, 215, 193, 0.05);
+}
+
+.tile-link:hover .tile-img7 {
+  box-shadow: 5px 5px rgba(91, 209, 250, 0.4), 10px 10px rgba(91, 209, 250, 0.3),
+    15px 15px rgba(91, 209, 250, 0.2), 20px 20px rgba(91, 209, 250, 0.1),
+    25px 25px rgba(91, 209, 250, 0.05);
+}
+
+.tile-link:hover .tile-img8 {
+  box-shadow: 5px 5px rgba(145, 156, 196, 0.4),
+    10px 10px rgba(145, 156, 196, 0.3), 15px 15px rgba(145, 156, 196, 0.2),
+    20px 20px rgba(145, 156, 196, 0.1), 25px 25px rgba(145, 156, 196, 0.05);
+}
+
+.tile-link:hover .tile-img9 {
+  box-shadow: 5px 5px rgba(188, 97, 129, 0.4), 10px 10px rgba(188, 97, 129, 0.3),
+    15px 15px rgba(188, 97, 129, 0.2), 20px 20px rgba(188, 97, 129, 0.1),
+    25px 25px rgba(188, 97, 129, 0.05);
+}
+
+.tile-link:hover .tile-img10 {
+  box-shadow: 5px 5px rgba(4, 140, 231, 0.4), 10px 10px rgba(4, 140, 231, 0.3),
+    15px 15px rgba(4, 140, 231, 0.2), 20px 20px rgba(4, 140, 231, 0.1),
+    25px 25px rgba(4, 140, 231, 0.05);
+}
+
+h2{font-size: 30px;
+	font-family:Times New Roman;
+	color: #5c5cfa;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;}
+    
+.myButton {
+      box-shadow: inset 0px 0px 0px 0px #e184f3;
+      background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+      background-color: #6f55a3;
+      border-radius: 20px;
+      border: 1px solid #6f55a3;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Times New Roman;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 5px 26px;
+      text-decoration: none;
+      text-shadow: 0px 0px 0px #6f55a3;
+    }
+        
+.myButton:hover {
+      background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+      background-color: #6f55a3;
+    }
+
+.myButton:active {
+      position: relative;
+      top: 1px;
+    }       
+        
+    </style>
+    </head>
+    
+    <body>
+        
+        <br/><h2 id="fly"> Sesiunile foto de studio reprezintă o alegere ideală atunci când doriți să creați amintiri de neuitat ale momentelor speciale din viața dumneavoastră. Într-un studio foto profesionist, veți avea acces la cele mai bune echipamente și tehnici de fotografiere, pentru a obține imagini de calitate superioară. În plus, atmosfera controlată și luminile speciale vor contribui la crearea unui cadru perfect pentru a surprinde cele mai bune poziții și expresii. Echipa noastră de fotografi profesioniști vă va ghida pe tot parcursul sesiunii, oferindu-vă sfaturi și îndrumări pentru a obține cele mai bune rezultate. După încheierea sesiunii, veți avea acces la o galerie de fotografii profesionale, editate cu grijă pentru a vă oferi cele mai bune rezultate posibile. Pentru o experiență unică și fotografii de calitate superioară, programați-vă astăzi o sesiune foto de studio!  </h2>
+    
+
+<script type="text/javascript">
+
+message = document.getElementById("fly").innerHTML; // $ = taking a new line
+distance = 50; // pixel(s)
+speed = 4; // milliseconds
+
+var txt="",
+	num=0,
+	num4=0,
+	flyofle="",
+	flyofwi="",
+	flyofto="",
+	fly=document.getElementById("fly");
+
+
+function stfly() {
+	for(i=0;i != message.length;i++) {
+		if(message.charAt(i) != "$")
+			txt += "<span style='position:relative;visibility:hidden;' id='n"+i+"'>"+message.charAt(i)+"<\/span>";
+		else
+			txt += "<br>";
+	}
+	fly.innerHTML = txt;
+	txt = "";
+	flyofle = fly.offsetLeft;
+	flyofwi = fly.offsetWidth;
+	flyofto = fly.offsetTop;
+	fly2b();
+}
+
+function fly2b() {
+	if(num4 != message.length) {
+		if(message.charAt(num4) != "$") {
+			var then = document.getElementById("n" + num4);
+			then.style.left = flyofle - then.offsetLeft + flyofwi / 2 + 'px';
+			then.style.top = flyofto - then.offsetTop + distance + 'px';
+			fly3(then.id, parseInt(then.style.left), parseInt(then.style.left) / 5, parseInt(then.style.top), parseInt(then.style.top) / 5);
+		}
+		num4++;
+		setTimeout("fly2b()", speed);
+	}
+}
+
+function fly3(target,lef2,num2,top2,num3) {
+	if((Math.floor(top2) != 0 && Math.floor(top2) != -1) || (Math.floor(lef2) != 0 && Math.floor(lef2) != -1)) {
+		if(lef2 >= 0)
+			lef2 -= num2;
+		else
+			lef2 += num2 * -1;
+		if(Math.floor(lef2) != -1) {
+			document.getElementById(target).style.visibility = "visible";
+			document.getElementById(target).style.left = Math.floor(lef2) + 'px';
+		} else {
+			document.getElementById(target).style.visibility = "visible";
+			document.getElementById(target).style.left = Math.floor(lef2 + 1) + 'px';
+		}
+		if(lef2 >= 0)
+			top2 -= num3
+		else
+			top2 += num3 * -1;
+		if(Math.floor(top2) != -1)
+			document.getElementById(target).style.top = Math.floor(top2) + 'px';
+		else
+			document.getElementById(target).style.top = Math.floor(top2 + 1) + 'px';
+		setTimeout("fly3('"+target+"',"+lef2+","+num2+","+top2+","+num3+")",50)
+	}
+}
+
+stfly()
+
+</script>
+     
+       
+        
+    <div class="grid image-grid">
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img1" src="Poze/s1.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img2" src="Poze/s2.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img3" src="Poze/s3.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img4" src="Poze/s4.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img5" src="Poze/s5.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img6" src="Poze/s6.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img7" src="Poze/s7.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img8" src="Poze/s8.png"alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img9" src="Poze/s9.png"alt="Image">
+      </a>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <a class="tile-link" href="#">
+        <img class="tile-img tile-img10" src="Poze/s10.png" alt="Image">
+      </a>
+    </div>
+  </div>
+
+</div>
+        
+        <div style="text-align: center; padding-bottom: 20px">
+    <a href="rezervari.html" class="myButton">Fă-ți o rezervare acum!</a>
+  </div>
+    </body>
+    
+    
+</html>
